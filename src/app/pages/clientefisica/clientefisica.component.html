@@ -57,7 +57,10 @@
                         | {{ clientefisica.email }}
                         | {{ clientefisica.tipo }}
                         | {{ clientefisica.endereco }}
-                       <span class="badge badge-danger">
+                       <span class="badge badge-danger" *ngIf="clientefisica.status == 'Inativo'">
+                         {{ clientefisica.status }}
+                         </span>
+                       <span class="badge badge-info" *ngIf="clientefisica.status == 'Ativo'">
                          {{ clientefisica.status }}
                          </span>
                      </b>
@@ -67,6 +70,12 @@
                   <td>{{ clientefisica.cpf }}</td>
                   <td>{{ clientefisica.telefone }}</td>
                   <td>{{ clientefisica.email }}</td>
+                  <span class="badge badge-danger" *ngIf="clientefisica.status == 'Inativo'">
+                         {{ clientefisica.status }}
+                         </span>
+                  <span class="badge badge-info" *ngIf="clientefisica.status == 'Ativo'">
+                         {{ clientefisica.status }}
+                         </span>
                   <td>
                     <button type="button" class="btn btn-outline-secondary">
                       Editar
