@@ -51,11 +51,17 @@
                 <tr *ngFor="let clientefisica of clientefisica$ | async" [ngbTooltip]="tipContent">
 
                    <ng-template #tipContent>
-                     <b>{{ clientefisica.nome }}
-                        {{ clientefisica.cpf }}
-                        {{ clientefisica.telefone }}
-                       {{ clientefisica.email }}
-                     </b>!</ng-template>
+                     <b>| {{ clientefisica.nome }}
+                        | {{ clientefisica.cpf }}
+                        | {{ clientefisica.telefone }}
+                        | {{ clientefisica.email }}
+                        | {{ clientefisica.tipo }}
+                        | {{ clientefisica.endereco }}
+                       <span class="badge badge-danger">
+                         {{ clientefisica.status }}
+                         </span>
+                     </b>
+                   </ng-template>
 
                   <td>{{ clientefisica.nome }}</td>
                   <td>{{ clientefisica.cpf }}</td>
