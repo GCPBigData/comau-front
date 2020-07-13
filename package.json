@@ -84,7 +84,9 @@
     "rxjs-compat": "6.6.0",
     "web-animations-js": "2.3.2",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.3"
+    "zone.js": "~0.10.3",
+    "@sweetalert2/ngx-sweetalert2": "^8.1.1",
+    "sweetalert2": "^9.15.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.1000.2",

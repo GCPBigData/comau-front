@@ -33,6 +33,9 @@ export class ClienteFisicaComponent implements OnInit {
   staticAlertClosed6 = false;
   staticAlertClosed7 = false;
 
+  public modalFireCondition = false;
+  public isSwalVisible = false;
+
   mudaTermo() {
     this.texto = this.queryField.value;
   }
