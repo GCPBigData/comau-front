@@ -1,1 +1,78 @@
-<p>clientefisica works!</p>
+<div class=" content">
+  <div class=" row">
+    <div class=" col-md-12">
+      <div class=" card card-plain">
+        <div class=" card-header">
+          <h4 class=" card-title">Listagem de Pessoas Fisicas</h4>
+          <p class=" category">Ordenadas por data de cadastro</p>
+        </div>
+        <div class=" card-body">
+          <div class=" table-responsive">
+            <form class="table-wrapper-scroll-y">
+
+              <div *ngIf='showSpinner' class="spinner-grow text-danger" role="status">
+                <span class="sr-only"></span>
+              </div>
+              <div *ngIf='showSpinner' class="spinner-grow text-primary" role="status">
+                <span class="sr-only"></span>
+              </div>
+              <div *ngIf='showSpinner' class="spinner-grow text-secondary" role="status">
+                <span class="sr-only"></span>
+              </div>
+              <div *ngIf='showSpinner' class="spinner-grow text-success" role="status">
+                <span class="sr-only"></span>
+              </div>
+              <div *ngIf='showSpinner' class="spinner-grow text-danger" role="status">
+                <span class="sr-only"></span>
+              </div>
+              <div *ngIf='showSpinner' class="spinner-grow text-warning" role="status">
+                <span class="sr-only"></span>
+              </div>
+              <div *ngIf='showSpinner' class="spinner-grow text-info" role="status">
+                <span class="sr-only"></span>
+              </div>
+              <div *ngIf='showSpinner' class="spinner-grow text-light" role="status">
+                <span class="sr-only"></span>
+              </div>
+              <div *ngIf='showSpinner' class="spinner-grow text-dark" role="status">
+                <span class="sr-only"></span>
+              </div>
+
+              <table class="table table-hover" id="clientefisica">
+                <thead class=" text-primary">
+                <tr>
+                  <th>Nome</th>
+                  <th>CPF</th>
+                  <th>Telefone</th>
+                  <th>E-mail</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let clientefisica of clientefisica$ | async" [ngbTooltip]="tipContent">
+
+                   <ng-template #tipContent>
+                     <b>{{ clientefisica.nome }}
+                        {{ clientefisica.cpf }}
+                        {{ clientefisica.telefone }}
+                       {{ clientefisica.email }}
+                     </b>!</ng-template>
+
+                  <td>{{ clientefisica.nome }}</td>
+                  <td>{{ clientefisica.cpf }}</td>
+                  <td>{{ clientefisica.telefone }}</td>
+                  <td>{{ clientefisica.email }}</td>
+                  <td>
+                    <button type="button" class="btn btn-outline-secondary">
+                      Editar
+                    </button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

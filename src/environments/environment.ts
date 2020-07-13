@@ -1,8 +1,8 @@
 export const environment = {
   production: true,
   /*CLIENTE FISICA   φ = '1,61803398874988'; */
-  clienteFlisicaURLInsert: 'http://177.47.18.202/zuul/brokerages/brokerages/',
-  clienteFlisicaURLListarTodos: 'http://177.47.18.202/zuul/brokerages/brokerages/ListaTodos/',
+  clienteFlisicaURLInsert: 'http://191.252.204.57/api/v1/clientefisica/todos',
+  clienteFlisicaURLListarTodos: 'http://localhost:8080/api/v1/clientefisica/todos',
   clienteFlisicaURLpainel: 'http://177.47.18.202/zuul//brokerages/brokerages/painel',
   clienteFlisicaURLfindName: 'http://177.47.18.202/zuul/brokerages/brokerages/findbyname/',
   clienteFlisicaURLfindId: 'http://177.47.18.202/zuul/brokerages/brokerages/findbyid',

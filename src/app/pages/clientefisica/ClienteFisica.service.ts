@@ -93,4 +93,8 @@ export class ClienteFisicaService {
   get(id) {
     return this.http.get(`${this.clienteFisicaURLfindId}/${id}`);
   }
+
+  getList(): Observable<any> {
+    return this.http.get(`${this.clienteFisicaURLListarTodos}`);
+  }
 }
