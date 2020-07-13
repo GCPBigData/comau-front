@@ -13,8 +13,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { ComponentsModule } from './components/components.module';
-import { ClienteFisicaComponent } from './pages/clientefisica/ClienteFisica.component';
-import { ClienteJuridicaComponent } from './pages/cliente-juridica/cliente-juridica.component';
+import {ClienteFisicaComponent} from './pages/clientefisica/ClienteFisica.component';
+import {ClienteJuridicaComponent} from './pages/clientejuridica/ClienteJuridica.component';
+
 
 @NgModule({
   imports: [

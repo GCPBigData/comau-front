@@ -11,7 +11,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/dashboard',
     title: 'Dashboard',
-    rtlTitle: 'لوحة القيادة',
+    rtlTitle:'Dashboard',
     icon: 'icon-chart-pie-36',
     class: ''
   },
@@ -23,7 +23,7 @@ export const ROUTES: RouteInfo[] = [
     class: ''
   },
   {
-    path: '/pessoafisica',
+    path: '/clientefisica',
     title: 'Pessoa Fisica',
     rtlTitle: 'Pessoa Fisica',
     icon: 'icon-satisfied',
@@ -31,7 +31,7 @@ export const ROUTES: RouteInfo[] = [
   }
   ,
   {
-    path: '/pessoajuridica',
+    path: '/clientejuridica',
     title: ' Pessoa jurídica',
     rtlTitle: ' Pessoa jurídica',
     icon: 'icon-trophy',
