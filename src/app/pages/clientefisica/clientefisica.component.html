@@ -6,13 +6,27 @@
           <h4 class=" card-title">Listagem de Pessoas Fisicas</h4>
           <p class=" category">Ordenadas por data de cadastro</p>
           <!-- Button trigger modal -->
-          <ng-template #tipContent>Cadastrar Cliente Fisica, </ng-template>
+       <!--   <ng-template #tipContent>Cadastrar Cliente Fisica, </ng-template>
           <button type="button"  [ngbTooltip]="tipContent"
                   class="btn btn-outline-secondary"
                   data-toggle="modal"
                   data-target="#clienteModal">
             <span class="material-icons">add_circle_outline</span>
-          </button>
+          </button>-->
+
+          <!-- Button trigger modal -->
+          <span class="badge badge-pill badge-primary" [ngbTooltip]="tipContent"
+                type="button"
+                data-toggle="modal"
+                data-target="#clienteModal">Cadastrar
+          <ng-template #tipContent>Cadastrar Cliente Fisica, </ng-template>
+          <button class="button-dropdown btn-link"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#clienteModal">
+            <i class=" tim-icons icon-simple-add"> </i>
+          </button></span>
+
         </div>
         <div class=" card-body">
           <div class=" table-responsive">
@@ -92,7 +106,7 @@
                     <button class=" btn btn-link"
                             type="button"
                             placement="left"
-                            ngbTooltip="Edit Task"
+                            ngbTooltip="Editidar Registro"
                             container="body"
                             data-toggle="modal"
                             data-target="#clienteModal">
@@ -105,7 +119,7 @@
                     <button class=" btn btn-link"
                             type="button"
                             placement="left"
-                            ngbTooltip="Edit Task"
+                            ngbTooltip="Desativa Registro"
                             container="body"
                             data-toggle="modal"
                             data-target="#clienteModal">
