@@ -15,19 +15,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { ComponentsModule } from './components/components.module';
 import {ClienteFisicaComponent} from './pages/clientefisica/ClienteFisica.component';
 import {ClienteJuridicaComponent} from './pages/clientejuridica/ClienteJuridica.component';
+import {SweetAlert2Module} from '@sweetalert2/ngx-sweetalert2';
 
 
 @NgModule({
-  imports: [
-    BrowserAnimationsModule,
-    FormsModule,
-    HttpClientModule,
-    ComponentsModule,
-    NgbModule,
-    RouterModule,
-    AppRoutingModule,
-    ToastrModule.forRoot()
-  ],
+    imports: [
+        BrowserAnimationsModule,
+        FormsModule,
+        HttpClientModule,
+        ComponentsModule,
+        NgbModule,
+        RouterModule,
+        AppRoutingModule,
+        ToastrModule.forRoot(),
+        SweetAlert2Module
+    ],
   declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, ClienteFisicaComponent, ClienteJuridicaComponent ],
   providers: [],
   bootstrap: [AppComponent]
