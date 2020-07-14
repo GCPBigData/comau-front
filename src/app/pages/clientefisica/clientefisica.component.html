@@ -6,15 +6,6 @@
           <h4 class=" card-title">Listagem de Pessoas Fisicas</h4>
           <p class=" category">Ordenadas por data de cadastro</p>
           <!-- Button trigger modal -->
-       <!--   <ng-template #tipContent>Cadastrar Cliente Fisica, </ng-template>
-          <button type="button"  [ngbTooltip]="tipContent"
-                  class="btn btn-outline-secondary"
-                  data-toggle="modal"
-                  data-target="#clienteModal">
-            <span class="material-icons">add_circle_outline</span>
-          </button>-->
-
-          <!-- Button trigger modal -->
           <span class="badge badge-pill badge-primary" [ngbTooltip]="tipContent"
                 type="button"
                 data-toggle="modal"
@@ -26,12 +17,10 @@
                   data-target="#clienteModal">
             <i class=" tim-icons icon-simple-add"> </i>
           </button></span>
-
         </div>
         <div class=" card-body">
           <div class=" table-responsive">
             <form class="table-wrapper-scroll-y">
-
               <div *ngIf='showSpinner' class="spinner-grow text-danger" role="status">
                 <span class="sr-only"></span>
               </div>
@@ -59,8 +48,6 @@
               <div *ngIf='showSpinner' class="spinner-grow text-dark" role="status">
                 <span class="sr-only"></span>
               </div>
-
-
               <table class="table table-hover" id="clientefisica">
                 <thead class=" text-primary">
                 <tr>
@@ -73,34 +60,32 @@
                 </thead>
                 <tbody>
                 <tr *ngFor="let clientefisica of clientefisica$ | async"
-                    [ngbTooltip]="tipContent"  data-toggle="modal" data-target="#clienteModal">
-
-                   <ng-template #tipContent>
-                     <b>| {{ clientefisica.nome }}
-                        | {{ clientefisica.cpf }}
-                        | {{ clientefisica.telefone }}
-                        | {{ clientefisica.email }}
-                        | {{ clientefisica.tipo }}
-                        | {{ clientefisica.endereco }}
-                       <span class="badge badge-danger" *ngIf="clientefisica.status == 'Inativo'">
+                    [ngbTooltip]="tipContent" data-toggle="modal" data-target="#clienteModal">
+                  <ng-template #tipContent>
+                    <b>| {{ clientefisica.nome }}
+                      | {{ clientefisica.cpf }}
+                      | {{ clientefisica.telefone }}
+                      | {{ clientefisica.email }}
+                      | {{ clientefisica.tipo }}
+                      | {{ clientefisica.endereco }}
+                      <span class="badge badge-danger" *ngIf="clientefisica.status == 'Inativo'">
                          {{ clientefisica.status }}
                          </span>
-                       <span class="badge badge-info" *ngIf="clientefisica.status == 'Ativo'">
+                      <span class="badge badge-info" *ngIf="clientefisica.status == 'Ativo'">
                          {{ clientefisica.status }}
                          </span>
-                     </b>
-                   </ng-template>
+                    </b>
+                  </ng-template>
                   <span class="badge badge-danger" *ngIf="clientefisica.status == 'Inativo'">
                          {{ clientefisica.status }}
-                         </span>
+                  </span>
                   <span class="badge badge-info" *ngIf="clientefisica.status == 'Ativo'">
                          {{ clientefisica.status }}
-                         </span>
+                  </span>
                   <td>{{ clientefisica.nome }}</td>
                   <td>{{ clientefisica.cpf }}</td>
                   <td>{{ clientefisica.telefone }}</td>
                   <td>{{ clientefisica.email }}</td>
-
                   <td>
                     <!-- Button trigger modal -->
                     <button class=" btn btn-link"
@@ -112,7 +97,6 @@
                             data-target="#clienteModal">
                       <i class=" tim-icons icon-pencil"> </i>
                     </button>
-
                   </td>
                   <td>
                     <!-- Button trigger modal -->
@@ -125,7 +109,6 @@
                             data-target="#clienteModal">
                       <i class=" tim-icons icon-trash-simple"> </i>
                     </button>
-
                   </td>
                 </tr>
                 </tbody>
@@ -138,7 +121,8 @@
   </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="clienteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="clienteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
