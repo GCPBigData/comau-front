@@ -12,7 +12,7 @@ import { ClienteFisica, RequestCreateClienteFisica} from './ClienteFisica';
 export class ClienteFisicaService {
 
   public readonly clienteFisicaURLListarTodos = `${environment.clienteFlisicaURLListarTodos}`;
-  public readonly clienteFisicaURLfindName =    `${environment.clienteFlisicaURLfindName}`;
+  public readonly clienteFisicaURLfindNome =    `${environment.clienteFlisicaURLfindNome}`;
   public readonly clienteFisicaURLfindId =      `${environment.clienteFlisicaURLfindId}`;
   public readonly clienteFisicaURLPut =         `${environment.clienteFlisicaURLPut}`;
   public readonly clienteFisicaURLInsert =      `${environment.clienteFlisicaURLInsert}`;
@@ -58,7 +58,7 @@ export class ClienteFisicaService {
   }
 
   searchClienteFisicaName(nome: string) {
-    return this.http.get<ClienteFisica[]>(this.clienteFisicaURLfindName + nome)
+    return this.http.get<ClienteFisica[]>(this.clienteFisicaURLfindNome + nome)
       .pipe(
         delay(1000),
         tap(console.log),
@@ -66,8 +66,12 @@ export class ClienteFisicaService {
       );
   }
 
-  getClienteFisicaName(name: string): Observable<any> {
-    return this.http.get(`${this.clienteFisicaURLfindName}${name}`);
+  getClienteFisicaNome(nome: string): Observable<any> {
+    return this.http.get(`${this.clienteFisicaURLfindNome}${nome}`);
+  }
+
+  getClienteFiltroFull(nome: string): Observable<any> {
+    return this.http.get(`${this.clienteFisicaURLfindNome}${nome}`);
   }
 
   getClienteFisicaById(id: number): Observable<ClienteFisica> {

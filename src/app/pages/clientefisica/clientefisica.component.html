@@ -62,19 +62,19 @@
                 <tr *ngFor="let clientefisica of clientefisica$ | async"
                     [ngbTooltip]="tipContent" data-toggle="modal" data-target="#clienteModal">
                   <ng-template #tipContent>
-                    <b>| {{ clientefisica.nome }}
+                    | {{ clientefisica.nome }}
                       | {{ clientefisica.cpf }}
                       | {{ clientefisica.telefone }}
                       | {{ clientefisica.email }}
                       | {{ clientefisica.tipo }}
                       | {{ clientefisica.endereco }}
                       <span class="badge badge-danger" *ngIf="clientefisica.status == 'Inativo'">
-                         {{ clientefisica.status }}
+                         {{ clientefisica.status }} | Código: {{ clientefisica.id }}
                          </span>
                       <span class="badge badge-info" *ngIf="clientefisica.status == 'Ativo'">
-                         {{ clientefisica.status }}
+                         {{ clientefisica.status }} | Código: {{ clientefisica.id }}
                          </span>
-                    </b>
+
                   </ng-template>
                   <span class="badge badge-danger" *ngIf="clientefisica.status == 'Inativo'">
                          {{ clientefisica.status }}
@@ -91,7 +91,7 @@
                     <button class=" btn btn-link"
                             type="button"
                             placement="left"
-                            ngbTooltip="Editidar Registro"
+                            ngbTooltip="Editar Registro"
                             container="body"
                             data-toggle="modal"
                             data-target="#clienteModal">
