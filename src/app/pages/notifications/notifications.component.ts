@@ -6,6 +6,7 @@ import { ToastrService } from 'ngx-toastr';
   templateUrl: 'notifications.component.html'
 })
 export class NotificationsComponent implements OnInit {
+
   staticAlertClosed  = false;
   staticAlertClosed1 = false;
   staticAlertClosed2 = false;

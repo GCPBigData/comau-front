@@ -64,6 +64,13 @@ export const ROUTES: RouteInfo[] = [
     rtlTitle: ' Tipo',
     icon: 'icon-atom',
     class: ''
+  },
+  {
+    path: '/message',
+    title: 'Mensagem ',
+    rtlTitle: ' Mensagem',
+    icon: 'icon-send',
+    class: ''
   }
 ];
 

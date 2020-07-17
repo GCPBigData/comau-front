@@ -4,18 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { ToastrModule } from 'ngx-toastr';
-
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
-
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
 import { AppRoutingModule } from './app-routing.module';
 import { ComponentsModule } from './components/components.module';
-import {ClienteFisicaComponent} from './pages/clientefisica/ClienteFisica.component';
-import {ClienteJuridicaComponent} from './pages/clientejuridica/ClienteJuridica.component';
-import {SweetAlert2Module} from '@sweetalert2/ngx-sweetalert2';
+import { ClienteFisicaComponent } from './pages/clientefisica/ClienteFisica.component';
+import { ClienteJuridicaComponent } from './pages/clientejuridica/ClienteJuridica.component';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+import { MessageComponent } from './pages/message/message.component';
 
 
 @NgModule({
@@ -30,7 +28,7 @@ import {SweetAlert2Module} from '@sweetalert2/ngx-sweetalert2';
         ToastrModule.forRoot(),
         SweetAlert2Module
     ],
-  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, ClienteFisicaComponent, ClienteJuridicaComponent ],
+  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, ClienteFisicaComponent, ClienteJuridicaComponent, MessageComponent ],
   providers: [],
   bootstrap: [AppComponent]
 })
