@@ -13,7 +13,7 @@ export class MessageService {
   public stompClient;
   public msg = [];
   initializeWebSocketConnection() {
-    const serverUrl = 'http://localhost:8081/socket';
+    const serverUrl = 'http://191.252.204.57:8081/socket';
     const ws = new SockJS(serverUrl);
     this.stompClient = Stomp.over(ws);
     const that = this;
