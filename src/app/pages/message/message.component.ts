@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {MessageService} from './message.service';
-import {ToastrService} from 'ngx-toastr';
+import { MessageService } from './message.service';
+import { ToastrService } from 'ngx-toastr';
 import set = Reflect.set;
 import DateTimeFormat = Intl.DateTimeFormat;
 
@@ -24,7 +24,7 @@ export class MessageComponent implements OnInit {
     if (this.input) {
       this.messageService.sendMessage(this.input);
       this.input = '';
-      this.showNotification(`bottom`, `right`);
+      /*this.showNotification(`bottom`, `right`);*/
       this.Time = this.Time;
     }
   }

@@ -14,6 +14,7 @@ import { ClienteFisicaComponent } from './pages/clientefisica/ClienteFisica.comp
 import { ClienteJuridicaComponent } from './pages/clientejuridica/ClienteJuridica.component';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { MessageComponent } from './pages/message/message.component';
+import { FileuploadComponent } from './pages/fileupload/fileupload.component';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import { MessageComponent } from './pages/message/message.component';
         ToastrModule.forRoot(),
         SweetAlert2Module
     ],
-  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, ClienteFisicaComponent, ClienteJuridicaComponent, MessageComponent ],
+  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, ClienteFisicaComponent, ClienteJuridicaComponent, MessageComponent, FileuploadComponent ],
   providers: [],
   bootstrap: [AppComponent]
 })

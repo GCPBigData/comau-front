@@ -66,6 +66,13 @@ export const ROUTES: RouteInfo[] = [
     class: ''
   },
   {
+    path: '/fileupload',
+    title: 'Subir PDF ',
+    rtlTitle: ' Subir PDF',
+    icon: 'icon-cloud-upload-94',
+    class: ''
+  },
+  {
     path: '/message',
     title: 'Mensagem ',
     rtlTitle: ' Mensagem',
