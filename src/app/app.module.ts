@@ -15,21 +15,32 @@ import { ClienteJuridicaComponent } from './pages/clientejuridica/ClienteJuridic
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { MessageComponent } from './pages/message/message.component';
 import { FileuploadComponent } from './pages/fileupload/fileupload.component';
-
+import { BrowserModule } from '@angular/platform-browser';
+/*import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';*/
 
 @NgModule({
     imports: [
         BrowserAnimationsModule,
+        BrowserModule,
         FormsModule,
         HttpClientModule,
         ComponentsModule,
         NgbModule,
         RouterModule,
         AppRoutingModule,
+        /*NgxExtendedPdfViewerModule,*/
         ToastrModule.forRoot(),
         SweetAlert2Module
+
     ],
-  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, ClienteFisicaComponent, ClienteJuridicaComponent, MessageComponent, FileuploadComponent ],
+  declarations: [
+    AppComponent,
+    AdminLayoutComponent,
+    AuthLayoutComponent,
+    ClienteFisicaComponent,
+    ClienteJuridicaComponent,
+    MessageComponent,
+    FileuploadComponent ],
   providers: [],
   bootstrap: [AppComponent]
 })

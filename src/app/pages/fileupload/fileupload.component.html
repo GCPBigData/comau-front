@@ -7,15 +7,15 @@
       <div class=" table-responsive">
         <table class=" table tablesorter" id="">
           <thead class=" text-primary">
-        
+
           </thead>
           <tbody>
             <tr>
-         
+
               <div class="content" role="main">
 
                 <div class="card">
-              
+
                   <div *ngIf="currentFile" class="progress">
                     <div
                       class="progress-bar progress-bar-info progress-bar-striped"
@@ -23,27 +23,36 @@
                       attr.aria-valuenow="{{ progress }}"
                       aria-valuemin="0"
                       aria-valuemax="100"
-                      [ngStyle]="{ width: progress + '%' }"
-                    >
+                      [ngStyle]="{ width: progress + '%' }">
                       {{ progress }}%
                     </div>
                   </div>
-              
+
                   <!--<label class="btn btn-default">
                     <input type="file" (change)="selectFile($event)" />
                   </label>-->
-              
+<!--
+                  <ngx-extended-pdf-viewer
+                    printResolution="150"
+                    [src]="'assets/pdfs/cv.pdf'"
+                    backgroundColor="#e8e8ef"
+                    [showZoomButtons]="true"
+                    [useBrowserLocale]="false"
+                    [showSidebarOnLoad]="true"
+                    height="50vh">
+                  </ngx-extended-pdf-viewer>-->
+
                   <div class="custom-file">
                     <input type="file" class="custom-file-input" id="customFileLang" (change)="selectFile($event)" lang="pt-br">
                     <label class="custom-file-label" for="customFileLang">Selecionar Arquivo</label>
                   </div>
-              
+
                   <button class="btn btn-success" [disabled]="!selectedFiles" (click)="upload()">
                     Enviar Arquivo
                   </button>
-              
+
                   <div class="alert alert-light" role="alert">{{ message }}</div>
-              
+
                   <div class="card">
                     <div class="card-header">Lista de Arquivos</div>
                     <ul
@@ -55,7 +64,7 @@
                       </li>
                     </ul>
                   </div>
-              
+
                 </div>
               </div>
 
@@ -66,4 +75,5 @@
     </div>
   </div>
 </div>
+
 

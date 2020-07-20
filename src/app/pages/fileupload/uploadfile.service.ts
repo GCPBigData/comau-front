@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpRequest, HttpHeaders, HttpEvent } from '@angular/common/http';
+import { HttpClient, HttpRequest, HttpEvent } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class UploadfileService {
   // todo: remover para eviironments
   private baseUrl = 'http://191.252.204.57:8082';

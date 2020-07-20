@@ -10,12 +10,15 @@ import { UploadfileService } from './uploadfile.service';
 })
 export class FileuploadComponent implements OnInit {
 
+  /*https://stackblitz.com/edit/ng2-pdf-viewer-u1sbr7?file=src%2Fapp%2Fapp.component.ts*/
+
   selectedFiles: FileList;
   currentFile: File;
   progress = 0;
   message = '';
-
   fileInfos: Observable<any>;
+  /*src = File;*/
+  /*src = './src/assets/pdfs/cv.pdf';*/
 
   constructor(private uploadService: UploadfileService) { }
 
@@ -29,7 +32,6 @@ export class FileuploadComponent implements OnInit {
 
   upload() {
     this.progress = 0;
-
     this.currentFile = this.selectedFiles.item(0);
     this.uploadService.upload(this.currentFile).subscribe(
       event => {
@@ -45,7 +47,6 @@ export class FileuploadComponent implements OnInit {
         this.message = 'Não foi possível carregar o arquivo !';
         this.currentFile = undefined;
       });
-
     this.selectedFiles = undefined;
   }
 }
