@@ -18,7 +18,8 @@ export class FileuploadComponent implements OnInit {
   message = '';
   fileInfos: Observable<any>;
   /*src = File;*/
-  /*src = './src/assets/pdfs/cv.pdf';*/
+  src = './src/assets/pdfs/cv.pdf';
+  pdfSrc = 'https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf'
 
   constructor(private uploadService: UploadfileService) { }
 

@@ -16,8 +16,8 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { MessageComponent } from './pages/message/message.component';
 import { FileuploadComponent } from './pages/fileupload/fileupload.component';
 import { BrowserModule } from '@angular/platform-browser';
-/*import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';*/
-
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+/*npm install ng2-pdf-viewer --save*/
 @NgModule({
     imports: [
         BrowserAnimationsModule,
@@ -28,7 +28,7 @@ import { BrowserModule } from '@angular/platform-browser';
         NgbModule,
         RouterModule,
         AppRoutingModule,
-        /*NgxExtendedPdfViewerModule,*/
+        PdfViewerModule,
         ToastrModule.forRoot(),
         SweetAlert2Module
 
