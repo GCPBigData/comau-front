@@ -18,7 +18,7 @@ export class FileuploadComponent implements OnInit {
   message = '';
   fileInfos: Observable<any>;
   src = FileList;
-  selecionado;
+  selecionado = './assets/pdfs/cv.pdf';
 
   /*src: string[] = ['./assets/pdfs/cv.pdf' , './assets/pdfs/cv2.pdf'];*/
   /*src = 'https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf'*/

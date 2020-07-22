@@ -49,7 +49,7 @@
                   <select id="src"
                           name="src"
                           [value]="src">
-                    <option *ngFor="let file of fileInfos | async">
+                    <option *ngFor="let file of fileInfos | async" [ngValue]="file.valueOf()">
                       {{ file.url }}
                     </option>
                   </select>
@@ -68,13 +68,14 @@
                         data-toggle="modal"
                         data-target="#clienteModal">
                       <ng-template #tipContent>
-                        | {{ file.name }}
+                          {{ file.name }}
                       </ng-template>
                       <td>{{ file.name }}</td>
                       <td>
                         <!-- Button trigger modal
                           <a href="{{ file.url }}">{{ file.name }}</a>
                          -->
+
                         <button class=" btn btn-link"
                                 type="button"
                                 placement="left"
@@ -84,6 +85,7 @@
                                 data-target="#clienteModal">
                           <i class=" tim-icons icon-zoom-split"> </i>
                         </button>
+
 
                       </td>
                       <td>
@@ -96,7 +98,6 @@
                             <i class=" tim-icons icon-link-72"></i>
                           </button>
                         </a>
-
                       </td>
                     </tr>
                     </tbody>
@@ -124,7 +125,7 @@
                 <div class="modal-body">
                   <form>
 
-                    <pdf-viewer [src]="src"
+                    <pdf-viewer [src]=selecionado
                                 [render-text]="true"
                                 [show-all]="true"
                                 style="display: block;"
