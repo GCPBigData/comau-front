@@ -22,6 +22,7 @@ import { FuncionarioComponent } from './pages/funcionario/funcionario.component'
 import { PacienteComponent } from './pages/paciente/paciente.component';
 import { IaComponent } from './pages/ia/ia.component';
 import { Covid19Component } from './pages/covid19/covid19.component';
+
 /*npm install ng2-pdf-viewer --save*/
 @NgModule({
     imports: [

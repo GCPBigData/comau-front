@@ -16,10 +16,13 @@ export class Pessoa {
   email: string;
   status: string;
   profissao: string;
+  //especialidade: string;
   sexo: string;
   etinia: string;
   raca: string;
   sangue: string;
+  //imagem: string;
+  //Obs: string;
   dataCadastro: DateTimeFormat;
 
 }
