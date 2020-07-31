@@ -10,6 +10,7 @@ import { TypographyComponent } from '../../pages/typography/typography.component
 import { ClienteFisicaComponent } from '../../pages/clientefisica/ClienteFisica.component';
 import { MessageComponent } from '../../pages/message/message.component';
 import { FileuploadComponent } from '../../pages/fileupload/fileupload.component';
+import {PessoaComponent} from '../../pages/pessoa/pessoa.component';
 
 // import { RtlComponent } from "../../pages/rtl/rtl.component";
 
@@ -23,6 +24,7 @@ export const AdminLayoutRoutes: Routes = [
   { path: 'typography', component: TypographyComponent },
   { path: 'clientefisica', component: ClienteFisicaComponent },
   { path: 'fileupload', component: FileuploadComponent },
-  { path: 'message', component: MessageComponent }
+  { path: 'message', component: MessageComponent },
+  { path: 'pessoa', component: PessoaComponent }
   // { path: "rtl", component: RtlComponent }
 ];

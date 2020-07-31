@@ -17,6 +17,7 @@ import { MessageComponent } from './pages/message/message.component';
 import { FileuploadComponent } from './pages/fileupload/fileupload.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { PessoaComponent } from './pages/pessoa/pessoa.component';
 /*npm install ng2-pdf-viewer --save*/
 @NgModule({
     imports: [
@@ -40,7 +41,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     ClienteFisicaComponent,
     ClienteJuridicaComponent,
     MessageComponent,
-    FileuploadComponent ],
+    FileuploadComponent,
+    PessoaComponent ],
   providers: [],
   bootstrap: [AppComponent]
 })
