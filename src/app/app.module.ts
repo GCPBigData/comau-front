@@ -24,6 +24,7 @@ import { IaComponent } from './pages/ia/ia.component';
 import { Covid19Component } from './pages/covid19/covid19.component';
 import { NovopacienteComponent } from './pages/paciente/novopaciente/novopaciente.component';
 import { NovofuncionarioComponent } from './pages/funcionario/novofuncionario/novofuncionario.component';
+import { ExameComponent } from './pages/exame/exame.component';
 
 /*npm install ng2-pdf-viewer --save*/
 @NgModule({
@@ -55,7 +56,8 @@ import { NovofuncionarioComponent } from './pages/funcionario/novofuncionario/no
     IaComponent,
     Covid19Component,
     NovopacienteComponent,
-    NovofuncionarioComponent
+    NovofuncionarioComponent,
+    ExameComponent
     ],
   providers: [],
   bootstrap: [AppComponent]

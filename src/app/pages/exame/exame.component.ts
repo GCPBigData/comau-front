@@ -4,20 +4,21 @@ import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { ToastrService } from 'ngx-toastr';
-import { PessoaService } from '../pessoa/pessoa.service';
-import { Pessoa } from '../pessoa/pessoa';
+import { ExameService } from './exame.service';
+import { Exame } from './exame';
 
 @Component({
-  templateUrl: './paciente.component.html',
-  styleUrls: ['./paciente.component.scss']
+  templateUrl: './exame.component.html',
+  styleUrls: ['./exame.component.scss']
 })
-export class PacienteComponent implements OnInit {
+export class ExameComponent implements OnInit {
+
 
 
   showSpinner = false;
   results$;
-  responsePaciente: Pessoa;
-  paciente$: Observable<Pessoa[]>;
+  responseExame: Exame;
+  exame$: Observable<Exame[]>;
   queryField = new FormControl();
   texto = '';
 
@@ -38,7 +39,7 @@ export class PacienteComponent implements OnInit {
   }
   constructor(
     private router: Router,
-    private pessoaService: PessoaService,
+    private exameService: ExameService,
     private http: HttpClient,
     private toastr: ToastrService
   ) {
@@ -49,11 +50,11 @@ export class PacienteComponent implements OnInit {
  }
 
   reloadData() {
-    this.paciente$ = this.pessoaService.getPessoa();
+    this.exame$ = this.exameService.getExames();
     this.showNotification(`bottom`, `left`);
     this.showSpinner = true;
-    this.pessoaService.getPessoas().subscribe(
-      results$ => this.responsePaciente = results$
+    this.exameService.getExames().subscribe(
+      results$ => this.exameService = results$
     );
     if (this.results$ == null) {
       setTimeout(() => {

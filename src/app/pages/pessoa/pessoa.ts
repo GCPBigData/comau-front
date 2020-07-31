@@ -7,6 +7,7 @@ export class Pessoa {
   cpf: string;
   sus: string; // 704.2032.3159.7587
   matricula: string;
+  //crm: string;
   estado: string;
   cidade: string;
   endereco: string;
@@ -17,10 +18,12 @@ export class Pessoa {
   status: string;
   profissao: string;
   //especialidade: string;
+  //dataNascimento: string;
   sexo: string;
   etinia: string;
   raca: string;
   sangue: string;
+  //doador: string;
   //imagem: string;
   //Obs: string;
   dataCadastro: DateTimeFormat;
@@ -34,6 +37,7 @@ export class RequestCreatePessoa{
   cpf: string;
   sus: string; // 704.2032.3159.7587
   matricula: string;
+  //crm: string;
   estado: string;
   cidade: string;
   endereco: string;
@@ -43,11 +47,15 @@ export class RequestCreatePessoa{
   email: string;
   status: string;
   profissao: string;
+  //especialidade: string;
+  //dataNascimento: string;
   sexo: string;
   etinia: string;
   raca: string;
   sangue: string;
+  //doador: string;
+  //imagem: string;
+  //Obs: string;
   dataCadastro: DateTimeFormat;
-
 
 }
