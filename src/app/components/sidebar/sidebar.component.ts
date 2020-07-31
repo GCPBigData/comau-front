@@ -66,7 +66,7 @@ export const ROUTES: RouteInfo[] = [
     class: ''
   },
   {
-    path: '/relatorio',
+    path: '/fileupload',
     title: 'Relatorios ',
     rtlTitle: ' Relatorios',
     icon: 'icon-cloud-upload-94',

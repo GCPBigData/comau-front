@@ -15,6 +15,8 @@ import { PacienteComponent } from 'src/app/pages/paciente/paciente.component';
 import { FuncionarioComponent } from 'src/app/pages/funcionario/funcionario.component';
 import { IaComponent } from 'src/app/pages/ia/ia.component';
 import { Covid19Component } from 'src/app/pages/covid19/covid19.component';
+import { NovopacienteComponent } from 'src/app/pages/paciente/novopaciente/novopaciente.component';
+import { NovofuncionarioComponent } from 'src/app/pages/funcionario/novofuncionario/novofuncionario.component';
 
 // import { RtlComponent } from "../../pages/rtl/rtl.component";
 
@@ -31,7 +33,9 @@ export const AdminLayoutRoutes: Routes = [
   { path: 'message', component: MessageComponent },
   { path: 'pessoa', component: PessoaComponent },
   { path: 'paciente', component: PacienteComponent },
+  { path: 'novopaciente', component: NovopacienteComponent },
   { path: 'funcionario', component: FuncionarioComponent },
+  { path: 'novofuncionario', component: NovofuncionarioComponent },
   { path: 'ia', component: IaComponent },
   { path: 'covid19', component: Covid19Component }
   // { path: "rtl", component: RtlComponent }

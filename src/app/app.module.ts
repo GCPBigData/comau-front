@@ -22,6 +22,8 @@ import { FuncionarioComponent } from './pages/funcionario/funcionario.component'
 import { PacienteComponent } from './pages/paciente/paciente.component';
 import { IaComponent } from './pages/ia/ia.component';
 import { Covid19Component } from './pages/covid19/covid19.component';
+import { NovopacienteComponent } from './pages/paciente/novopaciente/novopaciente.component';
+import { NovofuncionarioComponent } from './pages/funcionario/novofuncionario/novofuncionario.component';
 
 /*npm install ng2-pdf-viewer --save*/
 @NgModule({
@@ -51,7 +53,10 @@ import { Covid19Component } from './pages/covid19/covid19.component';
     FuncionarioComponent,
     PacienteComponent,
     IaComponent,
-    Covid19Component ],
+    Covid19Component,
+    NovopacienteComponent,
+    NovofuncionarioComponent
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
