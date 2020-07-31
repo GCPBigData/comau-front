@@ -8,26 +8,26 @@
     <div class=" card-body">
       <div class=" table-responsive">
         <table class=" table tablesorter" id="">
- 
+
           <tbody>
             <tr>
               <div class="toolbar" role="banner">
-                <span>Atendimento COMAU</span>
+                <span>Atendimento SISVIDA</span>
               </div>
-              
+
               <div class="content" role="main">
-              
-             
-              
+
+
+
                 <div class="card">
                   <div class="card-body">
-              
+
                     <ul href="#" [tabIndex]="-1" class="list-group-item list-group-item-action" *ngFor="let msg of messageService.msg">
                       <li class="list-group-item d-flex justify-content-between align-items-cente">
                         <h5> <span class="badge badge-info">{{ msg }}</span></h5></li>
                        {{ Time }}
                     </ul>
-              
+
                   </div>
                 </div>
 
@@ -38,10 +38,10 @@
                     <textarea class="form-control" (keyup.enter)="sendMessage()" type="textarea" placeholder="Digite e pressione [ENTER]" [(ngModel)]="input">
                     </textarea>
                 </div>
-              
+
               </div>
               </div>
-              
+
 
             </tr>
           </tbody>

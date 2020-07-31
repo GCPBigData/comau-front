@@ -1,7 +1,7 @@
 {
-  "name": "comau",
+  "name": "SISVIDA",
   "version": "1.1.0",
-  "description": "comau",
+  "description": "SISVIDA",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

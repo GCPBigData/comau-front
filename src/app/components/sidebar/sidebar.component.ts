@@ -23,67 +23,67 @@ export const ROUTES: RouteInfo[] = [
     class: ''
   },
   {
-    path: '/clientefisica',
-    title: 'Pessoa Fisica',
-    rtlTitle: 'Pessoa Fisica',
+    path: '/funcionario',
+    title: 'Funcionário',
+    rtlTitle: 'funcionário',
     icon: 'icon-satisfied',
     class: ''
   }
   ,
   {
-    path: '/clientejuridica',
-    title: ' Pessoa jurídica',
-    rtlTitle: ' Pessoa jurídica',
+    path: '/paciente',
+    title: ' Paciente',
+    rtlTitle: ' Paciente',
     icon: 'icon-trophy',
     class: ''
   },
   {
     path: '/curso',
-    title: 'Curso ',
-    rtlTitle: ' Curso',
+    title: 'Exames ',
+    rtlTitle: ' Exames',
     icon: 'icon-map-big',
     class: ''
   },
   {
-    path: '/recurso',
-    title: 'Recurso ',
-    rtlTitle: ' recurso',
+    path: '/prontuario',
+    title: 'Prontuário Eletrônico',
+    rtlTitle: ' Prontuário Eletrônico',
     icon: 'icon-light-3',
     class: ''
   },
   {
-    path: '/projeto',
-    title: 'Projeto ',
-    rtlTitle: ' Projeto',
+    path: '/laudo',
+    title: 'Laudo ',
+    rtlTitle: ' Laudo',
     icon: 'icon-pin',
     class: ''
   },
   {
-    path: '/tipo',
-    title: 'Tipo ',
-    rtlTitle: ' Tipo',
+    path: '/ia',
+    title: 'Inteligência Artificial ',
+    rtlTitle: ' Inteligência Artificial',
     icon: 'icon-atom',
     class: ''
   },
   {
-    path: '/fileupload',
-    title: 'Subir PDF ',
-    rtlTitle: ' Subir PDF',
+    path: '/relatorio',
+    title: 'Relatorios ',
+    rtlTitle: ' Relatorios',
     icon: 'icon-cloud-upload-94',
     class: ''
   },
   {
     path: '/message',
-    title: 'Mensagem ',
-    rtlTitle: ' Mensagem',
+    title: 'Atendimento Online ',
+    rtlTitle: ' Atendimento Online',
     icon: 'icon-send',
     class: ''
   },
   {
-    path: '/pessoa',
-    title: 'Pessoa ',
-    rtlTitle: ' Pessoa',
-    icon: 'icon-send',
+    path: '/central',
+    title: 'Central Ajustes',
+    rtlTitle: ' Central Ajustes',
+    icon: 'icon-video-66',
     class: ''
   }
 ];

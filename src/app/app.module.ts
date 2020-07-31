@@ -18,6 +18,10 @@ import { FileuploadComponent } from './pages/fileupload/fileupload.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { PessoaComponent } from './pages/pessoa/pessoa.component';
+import { FuncionarioComponent } from './pages/funcionario/funcionario.component';
+import { PacienteComponent } from './pages/paciente/paciente.component';
+import { IaComponent } from './pages/ia/ia.component';
+import { Covid19Component } from './pages/covid19/covid19.component';
 /*npm install ng2-pdf-viewer --save*/
 @NgModule({
     imports: [
@@ -42,7 +46,11 @@ import { PessoaComponent } from './pages/pessoa/pessoa.component';
     ClienteJuridicaComponent,
     MessageComponent,
     FileuploadComponent,
-    PessoaComponent ],
+    PessoaComponent,
+    FuncionarioComponent,
+    PacienteComponent,
+    IaComponent,
+    Covid19Component ],
   providers: [],
   bootstrap: [AppComponent]
 })
