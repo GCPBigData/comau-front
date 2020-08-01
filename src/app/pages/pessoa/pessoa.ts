@@ -24,7 +24,7 @@ export class Pessoa {
   sangue: string;
   doador: string;
   imagem: string;
-  Obs: string;
+  obs: string;
   dataCadastro: DateTimeFormat;
 }
 
@@ -51,7 +51,7 @@ export class RequestCreateFuncionario{
   sangue: string;
   doador: string;
   imagem: string;
-  Obs: string;
+  obs: string;
   dataCadastro: DateTimeFormat;
 
 }
@@ -76,5 +76,5 @@ export class RequestCreatePaciente{
   sangue: string;
   doador: string;
   imagem: string;
-  Obs: string;
+  obs: string;
 }

@@ -10,7 +10,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class NovopacienteComponent implements OnInit {
 
   showSpinner = false;
-  pessoaForm: FormGroup;
+  pacienteForm: FormGroup;
+  statusString: string[] = ['Inativo' , 'Ativo'];
 
   request: RequestCreatePaciente = {
   nome: '',
@@ -32,7 +33,7 @@ export class NovopacienteComponent implements OnInit {
   sangue: '',
   doador: '',
   imagem: '',
-  Obs: ''
+  obs: ''
   }
 
   constructor(
@@ -47,23 +48,27 @@ export class NovopacienteComponent implements OnInit {
 
     // TODO: usado para gerar reconhecimento do combo
     gerarForm() {
-      this.pessoaForm = this.formBuilder.group({
-          cpf: [null, [ Validators.required ]],
-          areahospital: [null],
-          imagens: [null],
-          paciente: [null],
-          medico: [null],
-          funcionario: [null],
-          modalidade: [null],
-          procedimento: [null],
-          laudo: [null],
-          notamedico: [null],
-          audio: [null],
-          status: [null],
-          prioridade: [null],
-          maquina: [null],
-          dataTermino: [null],
-          dataCadastro: [null]
+      this.pacienteForm = this.formBuilder.group({
+        nome: [null, [ Validators.required ]],
+        cpf: [null, [ Validators.required ]],
+        sus: [null],
+        estado: [null],
+        cidade: [null],
+        endereco: [null],
+        bairro: [null],
+        cep: [null],
+        telefone: [null],
+        email: [null],
+        status: [null],
+        profissao: [null],
+        dataNascimento: [null],
+        sexo: [null],
+        etinia: [null],
+        raca: [null],
+        sangue: [null],
+        doador: [null],
+        imagem: [null],
+        obs: ''
         });
   }
 
@@ -80,6 +85,6 @@ export class NovopacienteComponent implements OnInit {
 }
 
 limpa() {
-    this.pessoaForm.reset();
+    this.pacienteForm.reset();
 }
 }
