@@ -9,8 +9,7 @@
           <!-- Button trigger modal -->
           <span class="badge badge-pill badge-primary" [ngbTooltip]="tipContent"
                 type="button"
-                data-toggle="modal"
-                data-target="#clienteModal">Cadastrar
+                [routerLink]="['/novoexame']">Cadastrar
           <ng-template #tipContent>Cadastrar Cliente Fisica, </ng-template>
           <button class="button-dropdown btn-link"
                   type="button"

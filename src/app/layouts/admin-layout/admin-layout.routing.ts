@@ -7,7 +7,6 @@ import { NotificationsComponent } from '../../pages/notifications/notifications.
 import { UserComponent } from '../../pages/user/user.component';
 import { TablesComponent } from '../../pages/tables/tables.component';
 import { TypographyComponent } from '../../pages/typography/typography.component';
-import { ClienteFisicaComponent } from '../../pages/clientefisica/ClienteFisica.component';
 import { MessageComponent } from '../../pages/message/message.component';
 import { FileuploadComponent } from '../../pages/fileupload/fileupload.component';
 import { PessoaComponent} from '../../pages/pessoa/pessoa.component';
@@ -18,6 +17,7 @@ import { Covid19Component } from 'src/app/pages/covid19/covid19.component';
 import { NovopacienteComponent } from 'src/app/pages/paciente/novopaciente/novopaciente.component';
 import { NovofuncionarioComponent } from 'src/app/pages/funcionario/novofuncionario/novofuncionario.component';
 import { ExameComponent } from 'src/app/pages/exame/exame.component';
+import { NovoexameComponent } from 'src/app/pages/exame/novoexame/novoexame.component';
 
 // import { RtlComponent } from "../../pages/rtl/rtl.component";
 
@@ -29,7 +29,6 @@ export const AdminLayoutRoutes: Routes = [
   { path: 'user', component: UserComponent },
   { path: 'tables', component: TablesComponent },
   { path: 'typography', component: TypographyComponent },
-  { path: 'clientefisica', component: ClienteFisicaComponent },
   { path: 'fileupload', component: FileuploadComponent },
   { path: 'message', component: MessageComponent },
   { path: 'pessoa', component: PessoaComponent },
@@ -39,6 +38,7 @@ export const AdminLayoutRoutes: Routes = [
   { path: 'novofuncionario', component: NovofuncionarioComponent },
   { path: 'ia', component: IaComponent },
   { path: 'covid19', component: Covid19Component },
-  { path: 'exame', component: ExameComponent }
+  { path: 'exame', component: ExameComponent },
+  { path: 'novoexame', component: NovoexameComponent },
   // { path: "rtl", component: RtlComponent }
 ];

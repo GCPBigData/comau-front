@@ -1,6 +1,6 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { ToastrModule } from 'ngx-toastr';
@@ -10,8 +10,6 @@ import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { ComponentsModule } from './components/components.module';
-import { ClienteFisicaComponent } from './pages/clientefisica/ClienteFisica.component';
-import { ClienteJuridicaComponent } from './pages/clientejuridica/ClienteJuridica.component';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { MessageComponent } from './pages/message/message.component';
 import { FileuploadComponent } from './pages/fileupload/fileupload.component';
@@ -25,6 +23,7 @@ import { Covid19Component } from './pages/covid19/covid19.component';
 import { NovopacienteComponent } from './pages/paciente/novopaciente/novopaciente.component';
 import { NovofuncionarioComponent } from './pages/funcionario/novofuncionario/novofuncionario.component';
 import { ExameComponent } from './pages/exame/exame.component';
+import { NovoexameComponent } from './pages/exame/novoexame/novoexame.component';
 
 /*npm install ng2-pdf-viewer --save*/
 @NgModule({
@@ -32,6 +31,7 @@ import { ExameComponent } from './pages/exame/exame.component';
         BrowserAnimationsModule,
         BrowserModule,
         FormsModule,
+        ReactiveFormsModule,
         HttpClientModule,
         ComponentsModule,
         NgbModule,
@@ -46,8 +46,6 @@ import { ExameComponent } from './pages/exame/exame.component';
     AppComponent,
     AdminLayoutComponent,
     AuthLayoutComponent,
-    ClienteFisicaComponent,
-    ClienteJuridicaComponent,
     MessageComponent,
     FileuploadComponent,
     PessoaComponent,
@@ -57,7 +55,8 @@ import { ExameComponent } from './pages/exame/exame.component';
     Covid19Component,
     NovopacienteComponent,
     NovofuncionarioComponent,
-    ExameComponent
+    ExameComponent,
+    NovoexameComponent
     ],
   providers: [],
   bootstrap: [AppComponent]

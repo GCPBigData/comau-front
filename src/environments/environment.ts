@@ -2,8 +2,11 @@ export const environment = {
   production: true,
   /*PACIENTE   φ = '1,61803398874988'; */
   pessoaURFlux10: 'http://191.252.204.57:8080/pessoa/flux20',
+  pacienteURLInsert: 'http://191.252.204.57:8080/pessoa/flux20',
+
   /*EXAME   φ = '1,61803398874988'; */
   exameURFlux20: 'http://191.252.204.57:8080/exame/flux20',
+  exameURLInsert: 'http://191.252.204.57:8080/exame/post',
 
   /*CLIENTE FISICA   φ = '1,61803398874988'; */
   clienteFlisicaURLInsert: 'http://191.252.204.57/api/v1/clientefisica/todos',
