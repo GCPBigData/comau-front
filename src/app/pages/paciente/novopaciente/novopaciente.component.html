@@ -200,6 +200,24 @@
                            name="doador">
                 </div>
             </div>
+
+<!--
+            <div class="col-md-3">
+              <div class="form-group" class="example-full-width">
+                          <label for="status">Status .:</label>
+                          <select class="form-control"
+                                     id="status"
+                                     name="status"
+                                     formControlName="status"
+                                     [value]="request.status"
+                                     [(ngModel)]="request.status">
+                                 <option *ngFor="let p of statusString" [ngValue]="p.valueOf()">
+                                     {{ p }}
+                                 </option>
+                             </select>
+              </div>
+          </div>
+-->
        </div>
        <div class="row">
         <div class="col-md-8">
